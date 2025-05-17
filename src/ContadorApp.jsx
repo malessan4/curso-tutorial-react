@@ -10,10 +10,13 @@ const Button = () => {
 */
 
 export const ContadorApp = () => {
+    function handleClick(event, arg) {
+        console.log(event)
+    }
     return (
         <>
         <h1>Contador:</h1>
-            <button onClick={ function(event) {console.log(event)}}>
+            <button onClick={handleClick}>
                 Soy un boton
             </button>
         </>
